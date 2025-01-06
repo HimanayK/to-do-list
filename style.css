@@ -1,0 +1,121 @@
+
+:root {
+      /* FONT FAMILY  */
+      --font-family: 'poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%; /*  62.5% * 16px = 10px */
+}
+
+body {
+    font-family: var(--font-family);
+    background-image: linear-gradient(to right, rgba(232, 205, 226, 0.533), rgba(204, 190, 199, 0.862)), url('image/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.container {
+    width: max(30rem, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem auto;
+}
+
+.create-task-section {
+    width: min(60rem, 70%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 3cqb 3rem;
+    background-color:  #fff5f5;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(29, 28, 33, 0.19);
+}
+
+#create-task {
+    padding: 1rem;
+    font-size: clamp(1.5rem, 0.90rem + 0.20vw, 2.20rem);
+    border-radius: 1rem;
+    border: 2px inset #ffe3e3;
+}
+
+#create-button {
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: #f5f5f6;
+    background-color: #f783ac;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(29, 28, 33, 0.19);
+}
+#create-button:hover {
+    font-weight: 700;
+    background-color: #f05b8f;
+}
+
+.task-list-section {
+    width: 95%;
+}
+
+
+li {
+    text-decoration: none;
+    width: 96%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffe3e3;
+    box-shadow: 10px 10px 5px #ffa8a8;
+    border-radius: 0.7rem;
+}
+
+p {
+    width: 65%;
+    font-size: clamp(1.3rem, 0.95rem + 1vw, 4rem);
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+}
+
+
+.done-button {
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem 2rem;
+    align-self: center;
+    color: #f5f5f6;
+    background-color: #f783ac;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(29, 28, 33, 0.19);
+}
+.done-button:hover {
+    font-weight: 700;
+    background-color: #f05b8f;
+}
+
+@media screen and (max-width: 340px) {
+    li {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    
+}
+
+
+
